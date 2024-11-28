@@ -1,25 +1,34 @@
 package com.monkeyB.mkbusapi.controllers;
 
-import com.monkeyB.mkbusapi.models.Primate;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.monkeyB.mkbusapi.models.Primate;
 
 @RestController
 @RequestMapping("/api/primates")
 public class PrimateController {
 
-    private List<Primate> primates = new ArrayList<>();
+    private final List<Primate> primates = new ArrayList<>();
 
     public PrimateController() {
         // Dados iniciais
-        primates.add(new Primate("Chimpanzee", "Pan troglodytes", "Floresta Tropical", "Onívoro", "Primata altamente inteligente e social."));
-        primates.add(new Primate("Gorilla", "Gorilla gorilla", "Floresta Subtropical", "Herbívoro", "Primata maior e mais forte."));
-        primates.add(new Primate("Capuchin", "Cebus apella", "Floresta Tropical", "Onívoro", "Conhecido por sua inteligência e uso de ferramentas."));
+        //primates.add(new Primate("Chimpanzee", "Pan troglodytes", "Floresta Tropical", "Onívoro", "Primata altamente inteligente e social."));
+        //primates.add(new Primate("Gorilla", "Gorilla gorilla", "Floresta Subtropical", "Herbívoro", "Primata maior e mais forte."));
+        //primates.add(new Primate("Capuchin", "Cebus apella", "Floresta Tropical", "Onívoro", "Conhecido por sua inteligência e uso de ferramentas."));
     }
 
     // Retorna todos os primatas com possibilidade de filtrar por habitat ou dieta
