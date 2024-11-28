@@ -6,21 +6,28 @@ http://localhost:8080/api/primates/Chimpanzee
 //POST
 http://localhost:8080/api/primates
 {
-    "name": "Mandrill",
-    "scientific_name": "Mandrillus sphinx",
-    "habitat": "Floresta Equatorial",
-    "diet": "Onívoro",
-    "description": "Primata colorido encontrado na África."
+  "name": "Lemur",
+  "scientificName": "Lemur catta",
+  "habitat": "Madagascar",
+  "diet": "Onívoro",
+  "description": "Pequeno primata endêmico de Madagascar.",
+  "population": 50000,
+  "conservationStatus": "Vulnerável",
+  "imageUrl": ""
 }
 
 //PUT
 http://localhost:8080/api/primates/Chimpanzee
+
 {
-    "name": "Chimpanzee",
-    "scientific_name": "Pan troglodytes",
-    "habitat": "Floresta Densa",
-    "diet": "Onívoro",
-    "description": "Primata muito social e inteligente, vive em florestas densas."
+  "name": "Chimpanzee",
+  "scientificName": "Pan troglodytes",
+  "habitat": "Floresta Tropical",
+  "diet": "Onívoro",
+  "description": "Primata muito inteligente e social.",
+  "population": 25000,
+  "conservationStatus": "Ameaçado",
+  "imageUrl": "https://example.com/images/chimpanzee_updated.jpg"
 }
 
 //DELETE
