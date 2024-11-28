@@ -13,7 +13,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Primate {
-    private Long id;
     private String name;
     private String scientificName;
     private String habitat;
