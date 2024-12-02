@@ -1,0 +1,3 @@
+//EXECUTE A API E ACESSE A ROTA PARA VISUALIZAR A DOCUMENTAÇÃO
+
+http://localhost:8080/swagger-ui/index.html#/
