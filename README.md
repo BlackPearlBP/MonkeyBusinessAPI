@@ -6,11 +6,11 @@ A MonkeyBusinessAPI oferece informações sobre diversas espécies de primatas, 
 
 ## Funcionalidades
 
-- **Listar todos os primatas**: Retorna uma lista com todos os primatas, com uma opção de filtragem por habitat e dieta.  
-- **Buscar primata por nome**: Busca informações sobre um primata específico filtrado por seu nome.  
-- **Adicionar um novo primata**: Permite adicionar um novo primata ao banco de dados.  
-- **Atualizar dados existentes**: Permite atualizar informações de um primata existente.  
-- **Deletar um primata**: Deleta um primata da lista.  
+- **Listar todos os primatas**: Retorna uma lista com todos os primatas, com uma opção de filtragem por habitat e dieta.
+- **Buscar primata por nome**: Busca informações sobre um primata específico filtrado por seu nome.
+- **Adicionar um novo primata**: Permite adicionar um novo primata ao banco de dados.
+- **Atualizar dados existentes**: Permite atualizar informações de um primata existente.
+- **Deletar um primata**: Deleta um primata da lista.
 
 ## Estrutura
 
@@ -36,10 +36,11 @@ O projeto é estruturado em:
 
 ## Como Executar o Projeto
 
-**1. Clone ou baixe o zip do repositório (no caso do zip, descompacte a pasta).**  
-**2. Instale as dependências necessárias.**  
-**3. Execute o comando 'mvn spring-boot:run' para iniciar a aplicação.**  
-**4. Acesse a API em http://localhost:8080/api/primates**
+**1. Clone ou baixe o zip do repositório (no caso do zip, descompacte a pasta).**
+**2. Instale as dependências necessárias.**
+**3. Configure o banco de dados corretamente.**
+**4. Execute o comando 'mvn spring-boot:run' para iniciar a aplicação.**
+**5. Acessa a API em http://localhost:8080/api/primates**
 
 ## Licença
 

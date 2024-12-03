@@ -1,34 +1,67 @@
-//GET
+//GET DIET
 http://localhost:8080/api/primates?diet=Onívoro
     OR
+//GET NAME
 http://localhost:8080/api/primates/Chimpanzee
+    OR
+//GET ALL
+http://localhost:8080/api/primates
+    OR
+//GET TYPE
+http://localhost:8080/api/primates/type/monkey
 
 //POST
 http://localhost:8080/api/primates
 {
-  "name": "Lemur",
-  "scientificName": "Lemur catta",
-  "habitat": "Madagascar",
+  "type": "monkey",
+  "name": "Capuchin",
+  "scientificName": "Cebus apella",
+  "habitat": {
+    "type": "Floresta Tropical",
+    "climate": "Tropical"
+  },
   "diet": "Onívoro",
-  "description": "Pequeno primata endêmico de Madagascar.",
-  "population": 50000,
-  "conservationStatus": "Vulnerável",
-  "imageUrl": ""
+  "description": "Conhecido por sua inteligência e uso de ferramentas.",
+  "population": 100000,
+  "conservationStatus": "Pouco preocupante",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Capuchin_Costa_Rica.jpg/613px-Capuchin_Costa_Rica.jpg",
+  "isSocial": true
+}
+OR
+{
+  "type": "ape",
+  "name": "Franklin",
+  "scientificName": "Homo erectus",
+  "habitat": {
+    "type": "Vila Nova",
+    "climate": "Tropical"
+  },
+  "diet": "Bombívoro",
+  "description": "Não conhecido por sua inteligência e uso de ferramentas.",
+  "population": 1,
+  "conservationStatus": "Nada preocupante",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Macaca_nigra_self-portrait_large.jpg/800px-Macaca_nigra_self-portrait_large.jpg",
+  "isSocial": false
 }
 
 //PUT
-http://localhost:8080/api/primates/Chimpanzee
+http://localhost:8080/api/primates/Franklin
 
 {
-  "name": "Chimpanzee",
-  "scientificName": "Pan troglodytes",
-  "habitat": "Floresta Tropical",
-  "diet": "Onívoro",
-  "description": "Primata muito inteligente e social.",
-  "population": 25000,
-  "conservationStatus": "Ameaçado",
-  "imageUrl": "https://example.com/images/chimpanzee_updated.jpg"
+  "type": "monkey",
+  "name": "Franklin",
+  "scientificName": "Homo neanderthalis",
+  "habitat": {
+    "type": "Vila Nova",
+    "climate": "Tropical"
+  },
+  "diet": "Suquívoro",
+  "description": "Conhecido.",
+  "population": 1,
+  "conservationStatus": "Preocupante",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Macaca_nigra_self-portrait_large.jpg/800px-Macaca_nigra_self-portrait_large.jpg",
+  "isSocial": false
 }
 
 //DELETE
-http://localhost:8080/api/primates/Chimpanzee
+http://localhost:8080/api/primates/Franklin

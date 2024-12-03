@@ -31,6 +31,16 @@ public class PrimateController {
         return ResponseEntity.ok(primates);
     }
 
+    // Busca primatas por tipo
+    @GetMapping("/type/{type}")
+    public ResponseEntity<List<Primate>> getPrimatesByType(@PathVariable String type) {
+        List<Primate> primates = primateService.getPrimatesByType(type);
+        if (primates.isEmpty()) {
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.ok(primates);
+    }
+
     // Busca um primata específico pelo nome
     @GetMapping("/{name}")
     public ResponseEntity<Primate> getPrimateByName(@PathVariable String name) {
